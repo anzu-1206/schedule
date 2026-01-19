@@ -1,0 +1,18 @@
+current directory: /home/sleep/schedule/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
+/home/sleep/.rbenv/versions/3.3.3/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/sleep/schedule/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20260119-31133-qysp2w sitelibdir\=./.gem.20260119-31133-qysp2w clean
+
+current directory: /home/sleep/schedule/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20260119-31133-qysp2w sitelibdir\=./.gem.20260119-31133-qysp2w
+compiling escape.c
+linking shared-object cgi/escape.so
+
+current directory: /home/sleep/schedule/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20260119-31133-qysp2w sitelibdir\=./.gem.20260119-31133-qysp2w install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20260119-31133-qysp2w/cgi
+
+current directory: /home/sleep/schedule/vendor/bundle/ruby/3.3.0/gems/cgi-0.5.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20260119-31133-qysp2w sitelibdir\=./.gem.20260119-31133-qysp2w clean
