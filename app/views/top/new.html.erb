@@ -1,0 +1,34 @@
+<h2>
+    予定の新規追加
+</h2>
+
+<%= form_with model: @user do |f| %>
+    <table>
+        <tr>
+            <th><%= f.label :title ,"タイトル" %></th>
+            <td><%= f.text_field :title %></td>
+        </tr>
+
+        <tr>
+            <th><%= f.label :startday ,"開始日" %></th>
+            <td><%= f.text_field :startday %></td>
+        </tr>
+
+        <tr>
+            <th><%= f.label :endday ,"終了日" %></th>
+            <td><%= f.text_field :endday %></td>
+        </tr>
+
+        <tr>
+            <th><%= f.label :memo ,"スケジュールメモ" %></th>
+            <td><%= f.text_area :memo %></td>
+        </tr>
+    </table>
+
+    <div>
+        <ul>
+            <li><%= link_to "キャンセル", :top %></li>
+            <li><%= f.submit "保存"%></li>
+        </ul>
+    </div>
+    <% end %>

@@ -1,0 +1,58 @@
+<div>
+    <span>
+        予定一覧
+    </span>
+    <div>
+        <span>
+            +
+        </span>
+        <span>
+            新規登録
+        </span>
+    </div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>タイトル</th>
+            <th>開始日</th>
+            <th>終了日</th>
+            <th>終日</th>
+            <th>更新日時</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @users.each do |user| %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.title %></td>
+            <td><%= user.startday %></td>
+            <td><%= user.endday %></td>
+            <td><%= user.allday %></td>
+            <td><%= user.updated_at %></td>
+            <td><%= user. %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<div>
+    <div>
+        <span>
+            予定合計
+        </span>
+        <span>
+            6
+        </span>
+        <span>
+            件
+        </span>
+    </div>
+    <span>
+        本日の日付 //
+    </span>
+</div>

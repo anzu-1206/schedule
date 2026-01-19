@@ -1,0 +1,2 @@
+class Newdate < ApplicationRecord
+end
