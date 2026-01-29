@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get "top/index", to: 'top#index'
-  get "top/new", to: 'top#new'
-  get "top/show", to: 'top#show'
-  get "top/edit", to: 'top#edit'
-  post 'newdates', to: 'top#create'
+  get "top/index", to: "top#index"
+  get "top/new", to: "top#new"
+  get "top/show", to: "top#show"
+  get "top/edit", to: "top#edit"
+  post "newdates", to: "top#create"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

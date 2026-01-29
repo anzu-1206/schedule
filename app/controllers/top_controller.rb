@@ -2,7 +2,7 @@ class TopController < ApplicationController
   def index
     @newdates = Newdate.all
   end
-  
+
   def new
     @newdate = Newdate.new
   end
@@ -18,15 +18,15 @@ class TopController < ApplicationController
   end
 
   def show
-    @newdate = Newdate.find(params{:id})
+    @newdate = Newdate.find(params { :id })
   end
 
   def edit
-    @newdate = Newdate.find(params{:id})
+    @newdate = Newdate.find(params { :id })
   end
 
   def update
-    @newdate = Newdate.find(params{:id})
+    @newdate = Newdate.find(params { :id })
     if @newdate.update(params.require(:newdate).permit(:title, :startday, :endday, :memo))
       flash[:notice] = "「#{@newdate.id}」の情報を更新しました"
       redirect_to :newdate
@@ -36,7 +36,7 @@ class TopController < ApplicationController
   end
 
   def destroy
-    @newdate = Newdate.find(params{:id})
+    @newdate = Newdate.find(params { :id })
     @newdate.destroy
     flash[:notice] = "スケジュールを削除しました"
     redirect_to :newdates
