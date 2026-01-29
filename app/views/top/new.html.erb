@@ -1,25 +1,31 @@
-<h2>
+<%= stylesheet_link_tag "new", "data-turbo-track": "reload" %>
+<meta name="turbolinks-visit-control" content="reload">
+
+
+<div class="all-new">
+<h2 class="title">
     予定の新規追加
 </h2>
 
-<%= form_with model: @user do |f| %>
+<div class="new-form">
+<%= form_with model: @newdate, local: true do |f| %>
     <table>
-        <tr>
+        <tr class="new-tr">
             <th><%= f.label :title ,"タイトル" %></th>
             <td><%= f.text_field :title %></td>
         </tr>
 
-        <tr>
+        <tr class="new-tr day">
             <th><%= f.label :startday ,"開始日" %></th>
-            <td><%= f.text_field :startday %></td>
+            <td><%= f.text_field :startday, :class => 'datepicker' %></td>
         </tr>
 
-        <tr>
+        <tr class="new-tr day">
             <th><%= f.label :endday ,"終了日" %></th>
-            <td><%= f.text_field :endday %></td>
+            <td><%= f.text_field :endday, :class => 'datepicker' %></td>
         </tr>
 
-        <tr>
+        <tr class="new-tr">
             <th><%= f.label :memo ,"スケジュールメモ" %></th>
             <td><%= f.text_area :memo %></td>
         </tr>
@@ -27,8 +33,11 @@
 
     <div>
         <ul>
-            <li><%= link_to "キャンセル", :top %></li>
-            <li><%= f.submit "保存"%></li>
+            <li class="cansel-li"><%= link_to "キャンセル",  top_index_path, :class =>"cansel" %></li>
+            <li class="submit-li"><%= f.submit "保存",  :class => "submit" %></li>
         </ul>
     </div>
-    <% end %>
+<% end %>
+</div>
+
+<script>$('.datepicker').datepicker();</script>

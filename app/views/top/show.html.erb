@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag "show", "data-turbo-track": "reload" %>
+
+<div>
+    <ul>
+        <li>←</li>
+        <li><%= link_to "一覧に戻る", :newdates %></li>
+    </ul>
+</div>
+
+<div>
+    <%= @newdate.title %>
+    <div>
+        <img src =>
+        <span>
+            <%= link_to "編集", :edit_newdate %>
+        </span>
+    </div>
+</div>
+
+<div>
+    <table>
+        <tr>
+            <th>開始日</th>
+                <td><%= @newdate.startday %></td>
+        </tr>
+        <tr>
+            <th>終了日</th>
+            <td><%= @newdate.endday %></td>
+        </tr>
+        <tr>
+            <th>終日</th>
+            <td><%= @newdate.allday %></td>
+        </tr>
+        <tr>
+            <th>スケジュールメモ</th>
+            <td><%= @newdate.memo %></td>
+        </tr>
+    </table>
+</div>

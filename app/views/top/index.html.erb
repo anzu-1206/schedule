@@ -1,18 +1,25 @@
-<div>
-    <span>
+<%= stylesheet_link_tag "index", "data-turbo-track": "reload" %>
+
+<div class="all-index">
+<div class="index-top">
+    <span class="title">
         予定一覧
     </span>
-    <div>
-        <span>
-            +
-        </span>
-        <span>
-            新規登録
-        </span>
-    </div>
+    <a href="/top/new">
+        <button class="new-cre">
+            <span>
+                +
+            </span>
+            新規作成
+        </button>
+    </a>
 </div>
 
-<table>
+<% if flash[:notice] %>
+    <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<table class="index-list">
     <thead>
         <tr>
             <th>ID</th>
@@ -26,33 +33,34 @@
     </thead>
 
     <tbody>
-        <% @users.each do |user| %>
+        <% @newdates.each do |newdate| %>
         <tr>
-            <td><%= user.id %></td>
-            <td><%= user.title %></td>
-            <td><%= user.startday %></td>
-            <td><%= user.endday %></td>
-            <td><%= user.allday %></td>
-            <td><%= user.updated_at %></td>
-            <td><%= user. %></td>
+            <td><%= newdate.id %></td>
+            <td><%= newdate.title %></td>
+            <td><%= newdate.startday %></td>
+            <td><%= newdate.endday %></td>
+            <td><%= newdate.allday %></td>
+            <td><%= newdate.updated_at.to_fs(:datetime_jp) %></td>
+            <td><%= link_to "詳細", top_show_path %></td>
+            <td><%= link_to "編集", top_edit_path %></td>
+            <td><%= link_to "削除", top_index_path, data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか？" } %></td>
         </tr>
     <% end %>
     </tbody>
 </table>
 
-<div>
-    <div>
-        <span>
+<div class="sum">
+    <div class="sum-title">
+        <span class="sum-text">
             予定合計
         </span>
-        <span>
+        <span class="sum-num">
             6
         </span>
-        <span>
+        <span class="sum-text">
             件
         </span>
     </div>
-    <span>
-        本日の日付 //
-    </span>
+    <日付>
+</div>
 </div>

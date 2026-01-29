@@ -1,0 +1,49 @@
+.all-new {
+    /* padding: 50px 500px; */
+}
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+.new-form {
+    background-color: white;
+    padding: 20px 30px;
+}
+.new-tr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.day {
+    display: flex;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-end;
+}
+.cansel {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.cansel-li {
+    padding: 15px 15px;
+    background-color: #2962ff;
+    border-radius: 15px;
+    border: none;
+}
+.submit-li {
+    padding: 15px 15px;
+    background-color: white;
+    border-radius: 15px;
+    border: solid 1px;
+}
+.submit {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
