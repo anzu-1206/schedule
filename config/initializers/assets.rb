@@ -14,4 +14,9 @@ Rails.application.config.assets.version = "1.0"
 Rails.application.config.assets.precompile += %w[ new.css ]
 Rails.application.config.assets.precompile += %w[ controllers/hello_controller.js ]
 Rails.application.config.assets.precompile += %w[ controllers/index.js ]
+
 Rails.application.config.assets.precompile += %w[ index.css ]
+Rails.application.config.assets.precompile += %w[ application.css ]
+Rails.application.config.assets.precompile += %w[ show.css ]
+Rails.application.config.assets.precompile += %w[ edit.css ]
+

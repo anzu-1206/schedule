@@ -1,11 +1,13 @@
 class Newdate < ApplicationRecord
     validates :title, presence: true, length: { maximum: 20 }
-    validates :startday, numericality: true, presence: true
+    validates :startday, presence: true
+    validates :endday, presence: true
 
-    validates :endday, :expiration_date_cannot_be_in_the_past, numericality: true, presence: true
+    validate :expiration_date_cannot_be_in_the_past
     def expiration_date_cannot_be_in_the_past
-        if :startday < :endday
-            errors.add(:endday, "は開始日より前の日付は使えません")
+        return if startday.blank? || endday.blank?
+        if endday < startday
+        errors.add(:endday, "は開始日より前の日付は使えません")
         end
     end
 

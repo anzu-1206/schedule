@@ -62,3 +62,11 @@ gem "jquery-rails"
 gem "jquery-ui-rails"
 
 gem "minitest", "< 6"
+
+
+gem 'pry-rails'
+
+gem 'rails-i18n'
+
+gem 'data-confirm-modal'
+

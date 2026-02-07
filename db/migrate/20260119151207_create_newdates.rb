@@ -2,9 +2,9 @@ class CreateNewdates < ActiveRecord::Migration[7.2]
   def change
     create_table :newdates do |t|
       t.string :title
-      t.integer :startday
-      t.integer :endday
-      t.string :allday
+      t.date :startday
+      t.date :endday
+      t.boolean :allday
       t.string :memo
 
       t.timestamps
