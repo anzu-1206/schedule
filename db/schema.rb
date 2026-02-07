@@ -13,9 +13,9 @@
 ActiveRecord::Schema[7.2].define(version: 2026_01_19_151207) do
   create_table "newdates", force: :cascade do |t|
     t.string "title"
-    t.integer "startday"
-    t.integer "endday"
-    t.string "allday"
+    t.date "startday"
+    t.date "endday"
+    t.boolean "allday"
     t.string "memo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

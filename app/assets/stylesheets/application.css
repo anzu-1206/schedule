@@ -14,8 +14,6 @@
  *= require_self
  */
 
-
-
 body {
     margin: 0;
     background-color: #f6f6f6;
@@ -25,7 +23,9 @@ body {
     height: 50px;
     background-color: #1c1d3b;
     margin: 0;
-    display: relative;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
 }
 .top {
     display: flex;
