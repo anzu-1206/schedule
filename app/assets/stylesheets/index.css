@@ -20,7 +20,7 @@ a:visited {
     align-items: center;
 }
 .title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 .new-cre {
@@ -43,9 +43,11 @@ a:visited {
     width: 100%;
     margin-bottom: 40px;
     text-align: left;
-    gap: 10px;
     background-color: white;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.02), 0px 1px 3px rgba(50, 50, 93, 0.15);
+    color: #212529;
+    font-size: 14px;
+    line-height: 18px;
 }
 th {
     padding: 10px 16px;
@@ -59,12 +61,10 @@ td {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.02), 0px 1px 3px rgba(50, 50, 93, 0.15);
+    background-color: white;
     margin: 40px 0;
     padding: 15px 30px;
-}
-.sum-title {
-    gap: 15px;
 }
 .sum-text {
     font-size: 16px;
@@ -73,7 +73,9 @@ td {
 .sum-num {
     font-size: 20px;
     font-weight: 700;
+    margin-left: 5px;
 }
-.date {
+.today {
     color: #A2A2A4;
+    font-size: 14px;
 }

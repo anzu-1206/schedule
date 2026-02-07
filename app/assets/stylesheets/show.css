@@ -46,6 +46,7 @@
     text-decoration: none;
 }
 .btn {
+    border: solid 1px;
     border-color: #2962ff;
     border-radius: 4px;
     height: 45px;
@@ -58,6 +59,7 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 18px;
+    text-decoration: none;
 }
 .svg {
     filter: invert(25%) sepia(96%) saturate(2772%) hue-rotate(223deg) brightness(104%) contrast(101%);

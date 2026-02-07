@@ -41,7 +41,7 @@
             <td><%= newdate.updated_at.to_fs(:datetime_jp) %></td>
             <td><%= link_to "詳細", top_show_path(newdate.id) %></td>
             <td><%= link_to "編集", top_edit_path(newdate.id) %></td>
-            <td><%= link_to "削除", top_path(newdate.id), data: { method: :delete, turbo_confirm: "本当に削除しますか？",} %></td>
+            <td><%= link_to "削除", top_path(newdate.id), data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか？",} %></td>
         </tr>
     <% end %>
     </tbody>
@@ -59,6 +59,6 @@
             件
         </span>
     </div>
-    <%= Time.zone.today.strftime('本日の日付 %Y/%m/%d') %>
+    <span class="today"><%= Time.zone.today.strftime('本日の日付 %Y/%m/%d') %></span>
 </div>
 </div>
